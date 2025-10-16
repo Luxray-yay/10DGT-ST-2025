@@ -20,16 +20,18 @@ else:
 
 # Version 2
 # While loop
-keep_going = ""
+keep_going = "" # The variable contains an empty string
 while keep_going == "":
-    like_coffee = input("Do you like coffee?")
+    like_coffee = input("Do you like coffee? ")
 
-    if like_coffee == "yes" or like_coffee == "Yes" or like_coffee == "y" or like_coffee "yep":
+    if like_coffee == "yes" or like_coffee == "Yes" or like_coffee == "y" or like_coffee == "yep":
          print("That is great! I like coffee too.")
-     
+         keep_going = "finished"
+         
     elif like_coffee == "no" or "No" or "n":
-         print("You are missing out! Why not give it a try?") 
-
+         print("You are missing out! Why not give it a try?")
+         keep_going = "finished" 
+         
 else:
      print("I don't understand. ")
 
